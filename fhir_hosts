@@ -1,0 +1,23 @@
+# Example Hosts Configuration.
+# 
+# This is a basic yaml file (yaml.org) where each root level tag represents a 
+# system "name" and it's children's keys represent key/values to assign to a 
+# host configuration which includes the authentication details.
+#
+# All host entries should have the following key/values:
+# host_desc             - This is just a short description which can be used
+#                         for log names or whatnot
+# target_service_url    - This is the URL associated with the actual API 
+# auth_type             - This is the module name for the authentication used
+#                         by the specified host
+#
+# Please note that there can be multiple hosts that use the same authentication
+# mechanism. Users must ensure that each host has a unique "key" 
+
+# Example of a basic auth configuration
+dev:
+    auth_type: 'auth_basic'
+    username: 'admin'
+    password: 'password'
+    host_desc: 'Example Test'
+    target_service_url: 'http://localhost:8000'
