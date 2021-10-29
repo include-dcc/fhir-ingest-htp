@@ -1,5 +1,5 @@
 # fhir-ingest-htp
-Included inside this repository are the scripts used to load HTP data into KF dev FHIR server.
+Included inside this repository are the scripts used to load INCLUDE/HTP data into KF dev FHIR server.
 
 There are two components to the process: Transformation and Loading (Extraction takes place during the initial transformation script). 
 
@@ -14,3 +14,7 @@ To accomodate the use of this plugin, the only real requirement is that the outp
 ## Requirements
 The primary requirement is the CMG FHIR plugin, which is a part of the [CMG Ingest suite](https://github.com/anvilproject/cmg-data-ingest). 
 
+Additional requirements include (Are also required by the ingest suite above): 
+[NCPI FHIR Client](https://github.com/NIH-NCPI/ncpi-fhir-client) A library used to simplify authentication against various types of FHIR servers. 
+
+[NCPI FHIR Utility](https://github.com/NIH-NCPI/ncpi-fhir-utility) A library used by the client above to interact with the FHIR REST API.
